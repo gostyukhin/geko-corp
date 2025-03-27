@@ -1,0 +1,7 @@
+mixin repair-preview(className, img, alt, title)
+    section.repair-preview(class= className, aria-labelledby="repair-preview-title") 
+        .wrapper
+            .preview-content 
+                img.preview-content__img(src= img= img, alt= alt)
+                h2(id="repair-preview-title").preview-content__title.h2= title
+

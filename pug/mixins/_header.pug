@@ -1,0 +1,31 @@
+mixin header(name)
+    header(class= name)
+        .wrapper
+            .header__wrapper
+                .header__logo.header__logo--desktop
+                    a.header__logo-link(href="index.html") 
+                        img.header__logo-img(src="images/logo.svg" alt="Логотип Geko Corp" loading="lazy")
+                .header__wrapper-row#mobile-menu
+                    .header__mobile
+                        .header__links
+                            .header__phones
+                                a.t-24(href="tel:+74951354547") +7 (495) 135-45-47
+                                    svg.arrow-phone
+                                        use(href="icons/sprite.svg#arrow-phone")
+                                a.t-24(href="tel:+79653187014") +7 (965) 318-70-14
+                                    svg.arrow-phone
+                                        use(href="icons/sprite.svg#arrow-phone")
+                            button.button.burger-button#burger-button(type="button", aria-label="Открыть меню")
+                                span
+                                span
+                                span
+                        .header__mobile-row
+                            .header__logo.header__logo--mobile
+                                a.header__logo-link.logo(href="index.html") 
+                                    img.header__logo-img(src="images/logo.svg", alt="Логотип Geko Corp", loading="lazy")
+                            include ../blocks/_social-list.pug
+                    include ../blocks/_navigation.pug
+                    include ../blocks/_mobile-navigation.pug
+            include ../blocks/_header-content
+            
+                

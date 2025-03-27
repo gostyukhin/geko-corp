@@ -1,0 +1,172 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp ремонт моноблоков", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--no-bg")
+        main 
+            include ../blocks/_repair-navigation.pug
+
+            +repair-preview("computers-preview", "icons/repair/monoblocks.svg", "monoblocks icon", "Ремонт моноблоков")
+
+
+            section.monoblocks-hero.repair-hero
+                h2.visually-hidden Ремонт моноблоков - превью 
+                .wrapper 
+                    .repair-hero__top
+                        p Моноблок – это гибрид компьютера и ноутбука, активно набирающий популярность как замена классического сочетания «системный блок + монитор». Они удобны, компактны, занимают мало места и эстетично выглядят, не уступают по характеристикам полноценному персональному компьютеру, отличаются такой же высокой мощностью и быстродействием.  Единственный минус такой техники в том, что в случае поломки отдельного модуля ее приходится ремонтировать полностью – в отличие от ПК, где можно просто заменить системный блок или монитор. Плюс к этому архитектура конструкции моноблока дает большую нагрузку на систему охлаждения, что является частой причиной поломок. 
+                    .repair-hero__middle
+                        p.repair-hero__subtitle.t-29 Поэтому среди превентивных мер на первом месте стоит регулярная чистка моноблока, это минимизирует риск частых поломок и сэкономит ваши средства на ремонт.  
+                        img.monoblocks-hero__img(src="images/repair-hero-3.jpg", alt="")
+                    .repair-hero__bottom 
+                        p Моноблоки разных брендов имеют разные типы поломок, здесь потребуется высокая квалификация специалистов, огромный опыт и своевременное обращение в компьютерный сервис. Наш сервисный центр Geko Corp готов предложить вам ремонт моноблоков различных производителей: Apple, Asus, HP, Sony, Lenovo, Acer и других. Наши специалисты гарантируют надлежащее исполнение заявленных работ, установку исключительно оригинальных комплектующих и срочную помощь в восстановлении работы моноблока.
+
+            +repair-form("Компьютерный сервис Geko Corp предоставляет услугу срочного выездного ремонта компьютерной техники в Москве и МО", "Для вызова специалиста оформите заявку на нашем сайте или по телефону, обязательно укажите марку и модель устройства, подробно опишите проблему: это даст возможность специалисту подготовить нужные детали и инструменты для ремонта.", "Наш специалист прибудет по указанному адресу в течение часа, или вы можете договориться о любом удобном для вас времени.", "Мастер бесплатно проведет диагностику вашего компьютера для выявления причины неисправности, предложит перечень необходимых работ и согласует с вами стоимость ремонта.", "Мастер проведет работы по ремонту и настройке вашего компьютера. По окончании работ подписывается договор и акт выполненных работ с предоставлением гарантии на выполненные работы и комплектующие сроком на 1 год.", "form--repair", "repair-form")
+
+            section.repair-price(aria-labelledby="monoblocks-price-title") 
+                .wrapper
+                    .section-wrapper
+                        h2.repair-price__title.section-title#monoblocks-price-title стоимость работ
+                        p.repair-price__subtitle Наши цены на услуги по ремонту моноблоков окончательны, то есть не включают скрытых надбавок, которые в дальнейшем могут привести к значительному увеличению стоимости ремонта. После бесплатной диагностики окончательная смета работ составляется из нижеуказанных цен плюс стоимость комплектующих в случае необходимости их замены.
+                        .acordion.acordion-repair
+                            .acordion-item
+                                button.acordion-button(type="button") ремонт системного блока
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Замена матрицы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Чистка моноблока
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт или замена HDD / SDD дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена процессора
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт или замена материнской платы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена оперативной памяти
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена системы охлаждения
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена шлейфа
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена инвертера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена лампы подсветки
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") программная часть
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Установка Windows
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка программного пакета
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление ОС после повреждения
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление информации при программных сбоях
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление информации при аппаратных повреждениях дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Удаление вирусов (антивирусная профилактика)
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка антивируса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка драйверов
+                                            span ? руб.
+
+                        +price-button("button-wrapper--repair")
+
+            
+            +attention("Важно вовремя обратиться в сервисный центр", "icons/attention/attention-img-5.svg", "attention__repair", "attention__link--hidden", "attention icon", "Чтобы точно ответить на вопрос, сколько стоит ремонт моноблока, необходимо определить причину поломки. Неисправность может быть вызвана неаккуратным обращением, которое приводит к механическим повреждениям, попаданием внутрь влаги или пыли, а также скачками напряжения в электросети или неизбежным износом деталей. Все эти и другие неисправности мы легко устраним.", "attention__content--border", "attention__subtitle attention__subtitle--hidden", subtitle)
+
+
+            section.repair-breakdowns
+                h2.visually-hidden Неисправности
+                .wrapper
+                    .section-wrapper
+                        table 
+                            thead
+                                tr
+                                    th.title-hidden.t-29 неисправность
+                                    th.title-hidden.t-29 Причина  
+                            tbody 
+                                tr 
+                                    td.table-title Моноблок не включается
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td 
+                                        ul  
+                                            li Повреждена материнская плата
+                                            li Неисправна система охлаждения
+                                tr 
+                                    td.table-title Нет изображения
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Повреждена матрица экрана
+                                            li Поврежден видеочип
+                                            li Перегорели лампы подсветки
+                                tr 
+                                    td.table-title Моноблок сильно нагревается
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправна система охлаждения
+                                            li Пыль на внутренних деталях
+                                tr 
+                                    td.table-title Моноблок работает медленно
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Повреждена система охлаждения
+                                            li Не хватает оперативной памяти
+                                            li Вирусное заражение
+                                tr 
+                                    td.table-title Произвольное отключение
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправность кулера / тепловых трубок
+                                tr 
+                                    td.table-title Появление ряби на экране
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Поврежден чип видеокарты
+                                tr 
+                                    td.table-title Сбой в работе usb-портов
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Драйверы повреждены или не обновлены
+                                            li Неисправны USB-порты
+                                
+                        +consultation-button()
+
+        include ../blocks/_footer.pug
+
+
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-3.pug
+        include ../blocks/_dialog-5.pug
+        include ../blocks/_dialog-6.pug

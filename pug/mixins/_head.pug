@@ -1,0 +1,15 @@
+mixin head(title, content)
+    head
+        meta(content='IE=edge' http-equiv='X-UA-Compatible')
+        meta(charset="UTF-8")
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1')
+        meta(name="description" content= content)
+        link(rel="icon" href="favicon.ico" type="image/x-icon")
+        link(rel="icon" href="favicons/icon.svg" type="image/svg+xml")
+        link(rel="manifest" href="/site.webmanifest")
+        link(rel="stylesheet", href="css/swiper-bundle.min.css")
+        link(rel="stylesheet", href="css/main.css")
+        script(src='js/swiper-bundle.min.js', defer)
+        script(src='js/swiper.js', defer)
+        script(src='js/main.js')
+        title= title

@@ -1,0 +1,81 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp настройка интернета", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--no-bg")
+        main 
+            include ../blocks/_repair-navigation.pug
+
+            +repair-preview("internet-preview", "icons/repair/internet.svg", "internet icon", "Настройка интернета")
+
+
+            section.internet-hero.repair-hero
+                h2.visually-hidden Настройка интернета - превью
+                .wrapper 
+                    .repair-hero__top
+                        p Без интернета компьютер, планшет или ноутбук превращаются в очень ограниченные по функционалу устройства. Если вы хотите пользоваться сетью в любое время суток, без проблем доступа, зависания и сбоев, специалисты сервиса Geko Corp окажут квалифицированную скорую помощь по настройке интернета на всех портативных компьютерных устройствах, персональных домашних и рабочих компьютерах. Подключение, установка пользовательских настроек может осуществляться независимо от установленной операционной системы. Мы работаем со всеми существующими ОС: Windows XP, Vista, 7, 8, 10, Mobile/CE и более ранними версиями, MacOS 10.4 Tiger, 10.5 Leopard и многими другими. Также при необходимости мы окажем вам техническую помощь с роутером и прокладкой кабелей
+                    .repair-hero__middle
+                        img.internet-hero__img(src="images/repair-hero-8.jpg", alt="")
+                    .repair-hero__bottom 
+                        p.repair-hero__subtitle.t-29 выездные специалисты сервиса geko corp:
+                        ul.repair-hero__list 
+                            li Установка и переустановка операционных систем различных версий Windows и MacOS
+                            li Оптимизация операционной системы для более быстрой работы
+                            li Установка, настройка и поддержка работы программного обеспечения: офисного пакета, программ для работы с графикой и т д.
+                            li Установка драйверов для периферийных устройств
+                            li Удаление вирусов и установка антивирусного ПО
+                            li Восстановление случайно удаленных данных
+                            li Рекомендации мастера по правильной и безопасной работе с компьютером.
+
+
+            +repair-form("Компьютерный сервис Geko Corp предоставляет услуги по настройке кабельного и беспроводного интернета в Москве и МО", "Оформите заявку на нашем сайте или свяжитесь со специалистом центра по телефону, опишете задачу.", "Наш специалист прибудет по указанному адресу в течение часа, или вы можете договориться о любом удобном для вас времени.", "Мастер предложит перечень необходимых работ и согласует с вами стоимость услуг.", "Мастер проведет работы по подключению и настройке интернета. По окончании работ подписывается договор и акт выполненных работ с предоставлением гарантии на выполненные работы сроком на 1 год.", "form--repair", "repair-form")
+
+
+
+            section.repair-price(aria-labelledby="internet-price-title") 
+                .wrapper
+                    .section-wrapper
+                        h2.repair-price__title.section-title#internet-price-title стоимость работ
+                        p.repair-price__subtitle Наши цены на услуги по настройке интернета окончательны, то есть не включают скрытых надбавок, которые в дальнейшем могут привести к значительному увеличению стоимости услуг специалиста. Окончательная смета работ составляется из нижеуказанных цен.
+                        .acordion.acordion-repair
+                            .acordion-item
+                                button.acordion-button(type="button") Настройка сети
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Настройка интернета
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка интернета по Wi-Fi сети
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена прошивки роутера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка Wi-Fi адаптера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка безопасности Wi-Fi сети
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Создание локальной сети
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Прокладка кабеля
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Обжим кабеля коннектором RG-45
+                                            span ? руб.
+                                    
+
+                        +price-button("button-wrapper--repair")
+
+        include ../blocks/_footer.pug
+
+
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-5.pug
+        include ../blocks/_dialog-6.pug

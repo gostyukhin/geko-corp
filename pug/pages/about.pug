@@ -1,0 +1,149 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp о компании", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--no-bg")
+        main
+            +page-title("Компьютерный сервис Geko Corp", "about__title")
+
+            section.about-hero 
+                .wrapper 
+                    h2.visually-hidden Предоставление качественного сервиса 
+                    p.about-hero__topline В компьютерном сервисе Geko Corp объединились профессионалы, которые хорошо знают и любят свое дело. Огромный опыт, современная техническая база и коллективный потенциал позволяют нам оперативно и качественно решать любые проблемы, возникшие с вашей компьютерной техникой. Мы ремонтируем любые виды техники: компьютеры, ноутбуки, моноблоки, планшеты, технику Apple, оказываем сопутствующие услуги.
+                    p.about-hero__middleline.t-20 Наша главная цель – предоставление качественного сервиса для компьютерной техники, без «подводных камней», связанных с обманом клиента. Мы выставляем честные цены без накруток, которые согласовываем с заказчиком до начала работ.  Наш прайс всегда актуален, размещен на сайте и мы его строго придерживаемся.
+                    p.about-hero__underline Мы ориентированы на долгосрочное сотрудничество с нашими клиентами и на рекомендации. Просим вас после ремонта, выполненного нашими специалистами, оставить честный отзыв о нашей работе на независимых сайтах 
+                        a(href="#") www.otzovik.com  
+                        | и 
+                        a(href="#") www.irecommend.ru
+                        | , это будет вашим вкладом в нашу борьбу с недобросовестными мастерскими-однодневками. 
+
+            +team("about-team", "team__info--hidden")
+
+
+            +attention("Работаем по всей Москве", "icons/attention/attention-img-3.svg", "attention__img-about", "attention__link--hidden", "attention icon", "Компьютерный сервис Geko Corp предоставляет услугу срочного выездного ремонта как домашней, так и офисной компьютерной техники в Москве и ближнем Подмосковье.", "attention__content-about")
+
+            section.work-process(aria-labelledby="work-process")
+                .wrapper 
+                    .section-wrapper
+                        h2.work-process__title.section-title#work-process Как мы работаем
+                        ol.work-process__list 
+                            li.work-process__list-item Для вызова специалиста оформите заявку на нашем сайте или по телефону, обязательно укажите марку и модель устройства, подробно опишите проблему: это даст возможность специалисту подготовить нужные детали и инструменты для ремонта. 
+                            li.work-process__list-item Наш специалист прибудет по указанному адресу в течение часа, или вы можете договориться о любом удобном для вас времени. 
+                            li.work-process__list-item Мастер бесплатно проведет диагностику вашего компьютера для выявления причины неисправности, предложит перечень необходимых работ и согласует с вами стоимость ремонта.  
+                            li.work-process__list-item Мастер проведет работы по ремонту и настройке вашего компьютера. По окончании работ подписывается договор и акт выполненных работ. 
+                            li.work-process__list-item На все выполненные работы и комплектующие предоставляется  гарантия сроком минимум на 1 год, при условии соблюдения клиентом наших рекомендаций по пользованию техникой.
+                        button.button.button--primary.btn-dialog-form(type="button") вызвать мастера
+                        a.work-process__link.t-18(href="price.html") Посмотреть прайс-лист
+                .work-process__img
+                    img(src="images/work-process-img.webp", alt="Graphic master", loading="lazy")
+
+
+            section.license(aria-labelledby="license-title") 
+                .wrapper 
+                    h2.license__title.section-title#license-title Мы ремонтируем компьютеры и ноутбуки любых марок и неисправности любой сложности
+                    ul.license__list 
+                        li.license__list-item 
+                            img(src="icons/license/philips.svg", alt="philips icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/apple.svg", alt="apple icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/toshiba.svg", alt="toshiba icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/hp.svg", alt="hp icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/lenovo.svg", alt="lenovo icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/xiaomi.svg", alt="xiaomi icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/huawei.svg", alt="huawei icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/lg.svg", alt="lg icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/sony.svg", alt="sony icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/dell.svg", alt="dell icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/samsung.svg", alt="samsung icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/asus.svg", alt="asus icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/vaio.svg", alt="vaio icon", loading="lazy")
+                        li.license__list-item 
+                            img(src="icons/license/acer.svg", alt="acer icon", loading="lazy")
+                    p.license__subtitle.t-20 В своей работе мы используем только лицензионное программное обеспечение и оригинальные комплектующие от официальных дистрибьюторов
+
+
+            section.pay(aria-labelledby="pay-title") 
+                .wrapper
+                    .section-wrapper 
+                        h2.pay__title.section-title#pay-title Способы оплаты
+                        p.pay__subtitle Мы работаем с частными и юридическими лицами. Вы можете оплатить работу наших специалистов любым удобным для вас способом.
+                        .pay__wrapper
+                            h3.pay__physical-title.t-29 Физические лица
+                            ul.pay__list 
+                                li.pay__list-item 
+                                    p.pay__list-name Наличными мастеру
+                                    .pay__list-group-img
+                                        img.wallet-icon(src="icons/license/wallet.svg", alt="wallet icon")
+                                li.pay__list-item 
+                                    p.pay__list-name Банковская карта
+                                    .pay__list-group-img
+                                        img.visa-icon(src="icons/license/visa.svg", alt="wallet icon")
+                                        img.mastercard-icon(src="icons/license/mastercard.svg", alt="wallet icon")
+                                        img.mir-icon(src="icons/license/mir.svg", alt="wallet icon")
+                                li.pay__list-item 
+                                    p.pay__list-name Перевод сбербанк онлайн
+                                    .pay__list-group-img
+                                        img.sber-icon(src="icons/license/sberbank.svg", alt="wallet icon")
+                                li.pay__list-item 
+                                    p.pay__list-name Электронные деньги
+                                    .pay__list-group-img
+                                        img.ya-pay-icon(src="icons/license/ya-pay.svg", alt="wallet icon")
+                                        img.web-money-icon(src="icons/license/web-money.svg", alt="wallet icon")
+                            p.pay__underline Оплата производится по окончании ремонта, после подписания договора и акта сдачи-приемки работ.
+                        h3.pay__legal-title.t-29 Юридические лица
+                        p.pay__legal-subtitle Безналичный расчет
+                        p.pay__legal-underline Оплата производится в соответствии с условиями заключенного договора.
+
+
+            include ../blocks/_reviews.pug
+
+            section.loyalty(aria-labelledby="loyalty-title") 
+                .wrapper 
+                    h2.loyalty__title.section-title#loyalty-title Программы лояльности
+                    ul.loyalty__list.decoration-wrapper  
+                        li.loyalty__list-item.decoration-wrapper__item 
+                            p.loyalty__list-discount 
+                                span 5
+                                sub %
+                            p.loyalty__list-name Подписчикам на наши группы в соцсетях скидка 5% на все виды работ
+                        li.loyalty__list-item.decoration-wrapper__item  
+                            p.loyalty__list-discount 
+                                span 10
+                                sub %
+                            p.loyalty__list-name При повторном обращении в наш сервис скидка 10% на все виды работ
+                        li.loyalty__list-item.decoration-wrapper__item  
+                            p.loyalty__list-discount 
+                                span 10
+                                sub %
+                            p.loyalty__list-name Пенсионерам предоставляется скидка 10% на все виды работ
+
+
+            +attention("Станьте нашим партнером", "icons/attention/attention-img-4.svg", "attention__message-about-2", "attention__link--hidden", "message icon",
+            "При рекомендации нас друзьям и знакомым мы из собственных средств выплатим вам 10% от суммы реализованного заказа", "attention__content--border", "attention__subtitle", "Станьте нашим партнером")
+
+            .wrapper
+                +consultation-button("button-wrapper--about")
+
+
+        include ../blocks/_footer.pug
+
+
+
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-3.pug
+        include ../blocks/_dialog-4.pug
+        include ../blocks/_dialog-5.pug
+        include ../blocks/_dialog-6.pug
