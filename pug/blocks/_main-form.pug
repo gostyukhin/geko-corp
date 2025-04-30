@@ -29,10 +29,10 @@ form.form#main-form(action="https://echo.htmlacademy.ru/", method="post", novali
             li.form__dropdown-item(data-value="brand 5") brand 5
     .form__name
         label.form__label(for="user-name") Ваше имя *
-        input.form__input.input-js#user-name(type="text", name="user-name", placeholder="Имя", data-required="true", data-min-length="2", data-max-length="20", data-name="true")
+        input.form__input.input-js.input-name#user-name(type="text", name="user-name", placeholder="Имя")
     .form__phone
         label.form__label(for="user-phone") Ваш телефон *
-        input.form__input.input-phone.input-js#user-phone(type="tel", name="user-phone", placeholder="+7 ( ___ ) ___-__-__", data-required="true", data-phone="true")
+        input.form__input.input-phone#user-phone(type="tel", name="user-phone", placeholder="+7 ( ___ ) ___-__-__")
     .form__message
         label.form__label(for="user-message") Опишите проблему
         textarea.form__input#user-message(name="user-message", placeholder="Текст сообщения")
@@ -40,6 +40,6 @@ form.form#main-form(action="https://echo.htmlacademy.ru/", method="post", novali
         label.form__label.checkbox-label.t-14(for="checkbox") 
             | Даю согласие на обработку моих персональных данных и принимаю 
             a(href="#")  политику конфиденциальности
-            input.checkbox-hidden#checkbox.input-js(type="checkbox", name="proccesing", required)
+            input.checkbox-hidden#checkbox(type="checkbox", name="proccesing")
             span(tabindex="0").checkbox
     button.form__button.button.button--primary(type="submit") Отправить

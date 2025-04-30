@@ -2779,6 +2779,10 @@ input[type="checkbox"]:checked+.checkbox {
 
 }
 
+.contacts-content__map {
+    height: 412px;
+}
+
 .contacts-content {
     &__map {
         max-width: 1080px;
@@ -4670,4 +4674,19 @@ dialog[open] {
     position: absolute;
     bottom: -25px;
     right: 0;
+}
+
+// Just validate
+.just-validate-error-label {
+    font-size: 12px;
+    position: absolute;
+    bottom: -22px;
+}
+
+.checkbox-error+span {
+    border-color: red;
+}
+
+.input-error {
+    border-color: red;
 }

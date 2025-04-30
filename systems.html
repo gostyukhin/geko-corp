@@ -5,14 +5,19 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
     <meta name="description" content="Ремонт и обслуживание цифровой техники, выезд мастера на дом"/>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml"/>
-    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="icon" type="image/png" href="./favicons/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="./favicons/favicon.svg"/>
+    <link rel="shortcut icon" href="./favicons/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Geko Corp"/>
+    <link rel="manifest" href="./favicons/site.webmanifest"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <script src="js/swiper-bundle.min.js" defer="defer"></script>
+    <script src="js/inputmask.min.js" defer="defer"></script>
+    <script src="js/just-validate.production.min.js" defer="defer"></script>
     <script src="js/swiper.js" defer="defer"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer="defer"></script>
     <title>Geko Corp операционыые системы</title>
   </head>
   <body>
@@ -229,11 +234,11 @@
                 </div>
                 <div class="form__name">
                   <label class="form__label" for="user-name">Ваше имя *</label>
-                  <input class="form__input input-js" id="user-name" type="text" name="user-name" placeholder="Имя" data-required="true" data-min-length="2" data-max-length="20" data-name="true"/>
+                  <input class="form__input input-name" id="user-name" type="text" name="user-name" placeholder="Имя"/>
                 </div>
                 <div class="form__phone">
                   <label class="form__label" for="user-phone">Ваш телефон *</label>
-                  <input class="form__input input-js" id="user-phone" type="tel" name="user-phone" placeholder="+7 ( ___ ) ___-__-__" data-required="true" data-phone="true"/>
+                  <input class="form__input input-phone" id="user-phone" type="tel" name="user-phone" placeholder="+7 ( ___ ) ___-__-__"/>
                 </div>
                 <div class="form__message">
                   <label class="form__label" for="user-message">Опишите проблему</label>
@@ -242,7 +247,7 @@
                 <div class="form__checkbox"> 
                   <label class="form__label checkbox-label t-14" for="checkbox">
                      Даю согласие на обработку моих персональных данных и принимаю <a href="#"> политику конфиденциальности</a>
-                    <input class="checkbox-hidden input-js" id="checkbox" type="checkbox" name="proccesing" required="required"/><span class="checkbox" tabindex="0"></span>
+                    <input class="checkbox-hidden input-js" id="checkbox" type="checkbox" name="proccesing"/><span class="checkbox" tabindex="0"></span>
                   </label>
                 </div>
                 <button class="form__button button button--primary" type="submit">вызвать мастера</button>
@@ -453,11 +458,11 @@
           <form class="form" id="dialog2-form" action="https://echo.htmlacademy.ru/" method="dialog" novalidate>
             <div class="form__name">
               <label class="form__label" for="user-name-dialog2">Ваше имя *</label>
-              <input class="form__input input-js" id="user-name-dialog2" type="text" name="user-name" placeholder="Имя" data-required="true" data-min-length="2" data-max-length="20" data-name="true">
+              <input class="form__input input-name" id="user-name-dialog2" type="text" name="user-name" placeholder="Имя">
             </div>
             <div class="form__phone">
               <label class="form__label" for="user-phone-dialog2">Ваш телефон *</label>
-              <input class="form__input input-js" id="user-phone-dialog2" type="tel" name="user-phone" placeholder="+7 ( ___ ) ___-__-__" data-required="true" data-phone="true">
+              <input class="form__input input-phone" id="user-phone-dialog2" type="tel" name="user-phone" placeholder="+7 ( ___ ) ___-__-__">
             </div>
             <div class="form__checkbox"> 
               <label class="form__label checkbox-label t-14" for="checkbox-dialog">

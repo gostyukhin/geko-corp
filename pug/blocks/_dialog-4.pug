@@ -36,10 +36,10 @@ dialog.dialog-4#dialog-4
                         li.form__dropdown-item(data-value="brand 5") brand 5
                 .form__name
                     label.form__label(for="user-name-dialog4") Ваше имя *
-                    input.form__input#user-name-dialog4.input-js(type="text", name="user-name", placeholder="Имя", data-required="true", data-min-length="2", data-max-length="20", data-name="true")
+                    input.form__input#user-name-dialog4.input-name(type="text", name="user-name", placeholder="Имя")
                 .form__phone
                     label.form__label(for="user-phone-dialog4") Ваш телефон *
-                    input.form__input#user-phone-dialog4.input-js(type="tel", name="user-phone", placeholder="+7 ( ___ ) ___-__-__", data-required="true", data-phone="true")
+                    input.form__input#user-phone-dialog4.input-phone(type="tel", name="user-phone", placeholder="+7 ( ___ ) ___-__-__")
                 .form__message
                     label.form__label(for="user-message-dialog4") Опишите проблему
                     textarea.form__input#user-message-dialog4(name="user-message", placeholder="Текст сообщения")
@@ -47,6 +47,6 @@ dialog.dialog-4#dialog-4
                     label.form__label.checkbox-label.t-14(for="checkbox-master") 
                         | Даю согласие на обработку моих персональных данных и принимаю 
                         a(href="#")  политику конфиденциальности
-                        input.checkbox-hidden#checkbox-master.input-js(type="checkbox", name="proccesing", required)
+                        input.checkbox-hidden#checkbox-master.input-js(type="checkbox", name="proccesing")
                         span(tabindex="0").checkbox
                 button.form__button.button.button--primary(type="submit") Отправить

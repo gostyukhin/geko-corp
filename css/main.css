@@ -3668,6 +3668,10 @@ input[type=checkbox]:checked + .checkbox {
 }
 
 .contacts-content__map {
+  height: 412px;
+}
+
+.contacts-content__map {
   max-width: 1080px;
 }
 .contacts-content iframe {
@@ -6445,4 +6449,18 @@ dialog[open] {
   position: absolute;
   bottom: -25px;
   right: 0;
+}
+
+.just-validate-error-label {
+  font-size: 12px;
+  position: absolute;
+  bottom: -22px;
+}
+
+.checkbox-error + span {
+  border-color: red;
+}
+
+.input-error {
+  border-color: red;
 }
