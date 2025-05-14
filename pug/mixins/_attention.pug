@@ -1,0 +1,13 @@
+mixin attention(title, img, classSize, link, alt, desc, classBorder, subtitleClass, subtitle)
+    aside.attention 
+        .wrapper
+            h3.visually-hidden= title
+            .attention__content(class= classBorder) 
+                .attention__img(class= classSize= classSize) 
+                    img(src= img= img, alt= alt, loading="lazy")
+                .attention__desc
+                    p(class= subtitleClass)= subtitle  
+                    p.t-24= desc
+            .attention__link(class= link)
+                button.t-24.btn-modal(type="button") получить консультацию 
+

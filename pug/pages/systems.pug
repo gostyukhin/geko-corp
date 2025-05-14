@@ -1,0 +1,125 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp операционыые системы", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--no-bg")
+        main 
+            include ../blocks/_repair-navigation.pug
+
+            +repair-preview("systems-preview", "icons/repair/windows.svg", "windows icon", "Операционные системы и программы")
+
+
+            section.systems-hero.repair-hero
+                h2.visually-hidden Операционные системы - превью
+                .wrapper 
+                    .repair-hero__top
+                        p Если Ваш компьютер тормозит и часто выдает ошибки, самопроизвольно перезагружается, то скорей всего операционная система либо устарела, либо нуждается в замене. 
+                    .repair-hero__middle
+                        .repair-hero__desc
+                            .repair-hero__wrapper
+                                p.repair-hero__subtitle.t-29 вам нужна переустановка операционной системы, если:
+                                ul.repair-hero__list 
+                                    li Наблюдаются периодические сбои в работе системы, появился BSOD (синий экран смерти)
+                                    li ПК или ноутбук постоянно зависает, тормозит (может помочь правильная настройка и оптимизация)
+                                    li В случае выхода из строя жесткого диска, замены материнской платы
+                                    li Вы хотите поменять версию или битность операционной системы (Windows 32 bit на 64 bit)
+                                    li Вы приобрели новый ноутбук или компьютер без установленной ОС (Free-Dos)
+                        img.copmuters-hero__img(src="images/repair-hero-6.jpg", alt="")
+                    .repair-hero__bottom 
+                        p Установка операционной системы достаточно сложный и тонкий процесс. Важно правильно разделить жесткий диск, выбрать файловую систему, сохранить существующую информацию, подобрать драйвера для устройств, а также установить необходимый пакет программ для работы с файлами.
+                        p.repair-hero__subtitle.t-29 Не пытайтесь самостоятельно устанавливать операционную систему, если Вы не уверены в своем уровне компетентности.
+                        p Часто самостоятельное выполнение задачи приводит к тому, что компьютер начинает работать со сбоями. Неправильная инсталляция снижает производительность, вызывает ряд других серьезных проблем. 
+                        p Компьютерный сервис Geko Corp оказывает широкий спектр услуг по компьютерной помощи:
+                        ul.repair-hero__list 
+                            li Установка и переустановка операционных систем различных версий Windows и MacOS
+                            li Оптимизация операционной системы для более быстрой работы
+                            li Установка, настройка и поддержка работы программного обеспечения: офисного пакета, программ для работы с графикой и т д.
+                            li Установка драйверов для периферийных устройств
+                            li Удаление вирусов и установка антивирусного ПО
+                            li Восстановление случайно удаленных данных
+                            li Рекомендации мастера по правильной и безопасной работе с компьютером.
+                        p Все услуги по компьютерной помощи наш сервис оказывает не только при выезде к клиенту, но и с помощью программ удаленной поддержки в рамках абонентского обслуживания. В своей работы мы используем только лицензионное программное обеспечение. 
+
+
+            +repair-form("Компьютерный сервис Geko Corp предоставляет услуги по компьютерной помощи в Москве и МО", "Оформите заявку на нашем сайте или свяжитесь со специалистом центра по телефону, опишете задачу. Уточните, какая форма сотрудничества для вас удобнее – очная или дистанционная.", "Наш специалист прибудет по указанному адресу в оговоренное время или подключится к вашему компьютеру дистанционно.", "Мастер бесплатно проведет диагностику вашего компьютера, предложит перечень необходимых работ и согласует с вами стоимость услуг.", "Мастер проведет работы по установке оговоренного ПО и настройке вашего компьютера. По окончании работ подписывается договор и акт выполненных работ с предоставлением гарантии на выполненные работы сроком на 1 год.", "form--repair", "repair-form")
+
+            section.repair-price(aria-labelledby="system-price-title")
+                .wrapper
+                    .section-wrapper
+                        h2.repair-price__title.section-title#system-price-title стоимость работ
+                        p.repair-price__subtitle Наши цены на услуги по ремонту ноутбуков окончательны, то есть не включают скрытых надбавок, которые в дальнейшем могут привести к значительному увеличению стоимости ремонта. После бесплатной диагностики окончательная смета работ составляется из нижеуказанных цен плюс стоимость комплектующих в случае необходимости их замены.
+                        .acordion.acordion-repair
+                            .acordion-item
+                                button.acordion-button(type="button") операционные системы
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Установка любой версии Windows
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка Windows под нужды пользователя
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка Windows на iMac или Macbook
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка MacOS
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка MacOS под нужды пользователя
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Перенос и сохранение данных на жестком диске
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление операционной системы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Подключение к интернету
+                                            span ? руб.
+                                        
+                            .acordion-item
+                                button.acordion-button(type="button") Программное обеспечение
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Установка пакета Microsoft Office
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка различных программ на PC
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка различных программ на Mac
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка антивируса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка драйверов
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") Абонентское обслуживание
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Тариф “Персональный” (до 3 устройств)
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Тариф “Семейный” (до 6 устройств)
+                                            span ? руб.
+
+                        +price-button("button-wrapper--repair")
+
+
+
+        include ../blocks/_footer.pug
+
+
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-5.pug
+        include ../blocks/_dialog-6.pug

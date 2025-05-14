@@ -1,0 +1,278 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp главная страница", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--bg")
+            
+        main 
+
+            section.services 
+                .wrapper
+                    h2.visually-hidden Услуги
+                    ul.services__list.services-list
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/computers.svg", alt="computers icon", loading="lazy")
+                            h3.services__list-name.t-29 РЕМОНТ 
+                                br
+                                | КОМПЬЮТЕРОВ
+                            ul.services__list-sublist
+                                li Замена блока питания
+                                li Замена материнской платы
+                                li Замена жесткого диска
+                                li Замена видеокарты
+                                li Восстановление данных
+                                li Чистка компьютера от пыли
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="computers.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/notebooks.svg", alt="notebooks icon", loading="lazy")
+                            h3.services__list-name.t-29 РЕМОНТ 
+                                br
+                                | ноутбуков
+                            ul.services__list-sublist
+                                li Ремонт залитого ноутбука
+                                li Замена клавиатуры
+                                li Замена экрана
+                                li Замена термопасты
+                                li Чистка от пыли
+                                li Замена жесткого диска
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="notebooks.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/monoblocks.svg", alt="monoblocks icon", loading="lazy")
+                            h3.services__list-name.t-29 РЕМОНТ 
+                                br
+                                | моноблоков
+                            ul.services__list-sublist
+                                li Ремонт материнской платы
+                                li Замена комплектующих
+                                li Замена видеокарты
+                                li Замена DVD-привода
+                                li Замена комплектующих
+                                li Чистка моноблока от пыли
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="monoblocks.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/apple.svg", alt="apple icon", loading="lazy")
+                            h3.services__list-name.t-29 РЕМОНТ техники
+                                br
+                                | Apple
+                            ul.services__list-sublist
+                                li Ремонт MacPro
+                                li Ремонт iMac
+                                li Ремонт MacBook
+                                li Ремонт MacMini
+                                li Ремонт материнской платы
+                                li Замена матрицы
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="apple.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/upgrade.svg", alt="upgrade icon", loading="lazy")
+                            h3.services__list-name.t-29 сборка и апгрейд 
+                                br
+                                | компьютеров
+                            ul.services__list-sublist
+                                li Сборка компьютера под заказ
+                                li Установка жесткого диска
+                                li Замена оперативной памяти
+                                li Замена материнской платы
+                                li Замена звуковой карты
+                                li Замена видеокарты
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="upgrade.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/windows.svg", alt="windows icon", loading="lazy")
+                            h3.services__list-name.t-29 установка ос и 
+                                br
+                                | программ
+                            ul.services__list-sublist
+                                li Windows XP / 7 / 8 / 10
+                                li MacOS
+                                li Антивирус
+                                li Офисные программы
+                                li Графические программы
+                                li Работа с ПО клиента
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="systems.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/viruses.svg", alt="viruses icon", loading="lazy")
+                            h3.services__list-name.t-29 удаление 
+                                br
+                                | вирусов
+                            ul.services__list-sublist
+                                li Чистка компьютера от вирусов
+                                li Чистка ноутбука от вирусов
+                                li Баннеры-вымогатели
+                                li Майнеры
+                                li Всплывающая реклама
+                                li Эротические баннеры
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="viruses.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/internet.svg", alt="internet icon", loading="lazy")
+                            h3.services__list-name.t-29 настройка 
+                                br
+                                | интернета
+                            ul.services__list-sublist
+                                li Подключение проводного и беспроводного интернета
+                                li Прокладка интернет-кабелей
+                                li Настройка роутера
+                                li Настройка Wi-Fi адаптора
+                                li Настройка ADSL интернета
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="internet.html") подробности и цены 
+                        li.services__list-item 
+                            .services__list-img
+                                img.services__list-icons(src="icons/services/corporate.svg", alt="corporate icon", loading="lazy")
+                            h3.services__list-name.t-29 корпоративным 
+                                br
+                                | клиентам
+                            ul.services__list-sublist
+                                li Создание локальной сети
+                                li Настройка облачных сервисов
+                                li Настройка серверов
+                                li Обслуживание серверов
+                                li Обслуживание компьютеров
+                                li IT-поддержка
+                                    br
+                                    | и другое...
+                            a.services__list-link.button.button--secondary(href="corporate.html") подробности и цены 
+
+
+            section.breaking(aria-labelledby="breaking-title")
+                .wrapper    
+                    h2.breaking__title.section-title#breaking-title НЕ РАБОТАЕТ КОМПЬЮТЕР?
+                    .breaking__content 
+                        .breaking__img 
+                            img(src="images/breaking-img.webp", alt="Телефон в руке", loading="lazy")
+                        ol.breaking__list 
+                            li.breaking__list-item.t-24 Вызовите мастера для бесплатной диагностики в удобное для вас время
+                            li.breaking__list-item.t-24 Узнайте причину неисправности, перечень необходимых работ и стоимость ремонта
+                            li.breaking__list-item.t-24 Платите по окончанию выполнения ремонта и подписания договора
+                            li.breaking__list-item.t-24 Получите гарантию 1 год на произведенные работы
+                    .breaking__link
+                        a(href="computers.html") подробнее 
+
+
+            section.submit-form#submit-form(aria-labelledby="submit-form-title")
+                .wrapper
+                    .section-wrapper 
+                        h2.submit-form__title.section-title#submit-form-title ВЫЗВАТЬ МАСТЕРА
+                        include ../blocks/_main-form.pug 
+                        .submit-form__content 
+                            .submit-form__img 
+                                img(src="images/form-img.webp", alt="Ремонт компьютера", loading="lazy")
+                            .submit-form__desc
+                                p Мастера сервисного центра Geko Corp оперативно и гарантированно устранят любые проблемы, вызванные програмными или аппаратными сбоями. В случае выявления неисправностей, которые невозможно обнаружить при первоначальной диагностике, мастер обязательно согласует с вами возникшие дополнительные расходы, так что вы всегда будете уверены в конечной стоимости ремонта.
+                                p Вы можете рассчитать предварительную стоимость ремонта по ценам в нашем прайс-листе. Если вы не нашли нужную услугу, свяжитесь с нами.
+            
+            +attention("Долгосрочное сотрудничество", "icons/attention/attention-img-1.svg", "attention__message", link, "message icon",
+            "Мы ориентированы на долгосрочное сотрудничество с нашими клиентами и работаем по принципу “домашнего доктора” для вашей компьютерной техники, поэтому обеспечиваем вас технической поддержкой и консультациями по всем вопросам, даже самым мелким.", classBorder, "attention__subtitle attention__subtitle--hidden", subtitle)
+
+            section.benefits(aria-labelledby="benefits-title")
+                .wrapper 
+                    h2.benefits__title.section-title#benefits-title ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ К НАМ
+                    ul.benefits__list.decoration-wrapper 
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-1.svg", alt="benefits icon")
+                            p.benefits__list-desc ремонтных работ выполняются на месте в день обращения 
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-2.svg", alt="benefits icon")
+                            p.benefits__list-desc Демократичные цены, отсутствие скрытых услуг и доплат
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-3.svg", alt="benefits icon")
+                            p.benefits__list-desc Гарантия на ремонтные работы и комплектующие один год
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-4.svg", alt="benefits icon")
+                            p.benefits__list-desc Все мастера – дипломированные специалисты с опытом работы более 8 лет
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-5.svg", alt="benefits icon")
+                            p.benefits__list-desc Современное профессиональное оборудование для диагностики и ремонта
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-6.svg", alt="benefits icon")
+                            p.benefits__list-desc При необходимости проведем ремонт вечером или в выходной день
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-7.svg", alt="benefits icon")
+                            p.benefits__list-desc Все запчасти только от официальных дистрибьюторов
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-8.svg", alt="benefits icon")
+                            p.benefits__list-desc Лицензионные ключи на программное обеспечение по оптовой цене 
+                        li.benefits__list-item.decoration-wrapper__item 
+                            .benefits__list-img 
+                                img(src="icons/benefits/benefits-icon-9.svg", alt="benefits icon")
+                            p.benefits__list-desc 9 из 10 обратившихся рекомендуют нас друзьям и знакомым
+                        
+
+            include ../blocks/_reviews.pug
+
+            +team()
+
+            +attention("Важно вовремя обратиться в сервисный центр", "icons/attention/attention-img-2.svg", "attention__message", "attention__link--hidden", "attention icon", "Жаль, нельзя заранее предугадать будущую поломку в компьютере. Она становится заметной, лишь когда тот окончательно перестает работать. Важно вовремя обратиться в сервисный центр для предоставления компьютерной помощи как только замечена неисправность. Это избавит вас от лишних затрат и стрессовых ситуаций.", "attention__content--border", "attention__subtitle attention__subtitle--hidden", subtitle)
+
+
+            section.faults(aria-labelledby="faults-title") 
+                .wrapper
+                    h2.faults__title.section-title#faults-title Когда нужно вызвать мастера
+                    table 
+                        tbody 
+                            tr 
+                                td.faults__name.t-20
+                                    p НЕ ВКЛЮЧАЕТСЯ МОНИТОР
+                                td.faults__desc 
+                                    p Убедитесь в исправности розетки и в том, что устройство к ней подключено. Возможно, не все провода или разъемы подключены корректно. Если вы все проверили и уверены, что проблема не в электропитании, поступающем к компьютеру, а в самом устройстве, вероятно монитор перестал работать по причине засорения комплектующих внутри блока. Требуется компьютерная помощь, ремонт и чистка устройства.
+                            tr 
+                                td.faults__name.t-20
+                                    p СИСТЕМНЫЙ БЛОК ИЗДАЕТ СИЛЬНЫЕ ШУМЫ
+                                td.faults__desc  
+                                    p Слышно посторонние шумы из системного блока — значит, что он чем-то засорен. Важно вовремя почистить блок, чтобы избежать последствий накопления грязи и порчи блока компьютеров. Следует обратиться за услугой “компьютерная помощь” к профессионалам Geko. Мастер аккуратно очистит блок и не повредит находящиеся внутри важные комплектующие.
+                                
+                            tr 
+                                td.faults__name.t-20
+                                    p ПОЯВЛЕНИЕ “СИНЕГО ЭКРАНА СМЕРТИ”
+                                td.faults__desc  
+                                    p Неисправность операционной системы говорит о наличии вирусов в компьютере. Выход из строя системного блока также может являться причиной поломки и необходимости услуги “компьютерная помощь”.
+                            tr 
+                                td.faults__name.t-20
+                                    p КОМПЬЮТЕР НЕ РАБОТАЕТ И ИЗДАЕТ РЕЗКИЕ ЗВУКИ
+                                td.faults__desc  
+                                    p В таком случае признаком неполадки компьютеров является неисправность оперативной памяти или видеокарты. Старайтесь обращать внимание, когда устройство шумит и не игнорируйте эти звуки. Необходимо срочно обратиться к специалисту и провести ремонт. Если этого не сделать, в следующий раз комп может вовсе не включиться.
+                            tr 
+                                td.faults__name.t-20
+                                    p ПРОПАЛО ИЗОБРАЖЕНИЕ С МОНИТОРА
+                                td.faults__desc  
+                                    p Дефекты, связанные с качеством изображений на сенсоре говорят о наличии повреждений во внутреннем чипе. О том, что неисправности в данном чипе все-таки есть, свидетельствуют посторонние объекты на экране, появившиеся полосы черного или белого цвета, а также полностью потемневший экран. 
+                    p.faults__additionally Здесь представлены не все неисправности, которые могут встретиться во время использования компьютера. Пользователи также сталкиваются с проблемой неработающей клавиатуры, не запускающихся программ, невозможностью подключиться к интернету, неполадками, связанными с жестким диском или USB-устройством итд. Компьютерная помощь от компании Geko гарантирует быстрое решение проблем!
+                    +consultation-button()
+
+
+        include ../blocks/_footer.pug
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-3.pug
+        include ../blocks/_dialog-5.pug
+        include ../blocks/_dialog-6.pug

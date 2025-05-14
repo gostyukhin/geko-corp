@@ -1,0 +1,259 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp ремонт ноутбуков", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--no-bg")
+        main 
+            include ../blocks/_repair-navigation.pug
+
+            +repair-preview("computers-preview", "icons/repair/notebooks.svg", "notebooks icon", "Ремонт ноутбуков")
+
+            section.notebooks-hero.repair-hero
+                h2.visually-hidden Ремонт ноутбуков - превью
+                .wrapper 
+                    .repair-hero__top
+                        p Благодаря своей мобильности и компактности ноутбуки в современном мире стали одним из самых востребованных видов компьютерной техники, но, к сожалению, они, наиболее часто подвержены разного рода поломкам. В отличие от стационарного компьютера, где поломки носят обычно локальный характер, например, сломалась клавиатура или вышел из строя монитор, в ноутбуке, из-за его комплексной конструкции, велик риск выхода из строя сразу всего аппарата.
+                        p Независимо от того, какой модели у вас ноутбук, он может выйти из строя по следующим причинам:
+                    .repair-hero__middle
+                        .repair-hero__desc
+                            .repair-hero__wrapper
+                                p.repair-hero__subtitle.t-29 Заводской брак 
+                                p Если изначально в девайсе установлены бракованные комплектующие, они не выдержат нагрузки, и техника начнет работать со сбоями.
+                            .repair-hero__wrapper
+                                p.repair-hero__subtitle.t-29 Длительная эксплуатация
+                                p Компоненты системы с течением времени подвергаются износу, ломаются. Поэтому какие-либо элементы может потребоваться заменить.
+                            .repair-hero__wrapper
+                                p.repair-hero__subtitle.t-29 Нарушение правил эксплуатации
+                        img.copmuters-hero__img(src="images/repair-hero-2.jpg", alt="")
+                    .repair-hero__bottom 
+                        p Расколотые корпуса, облитая жидкостью клавиатура. самопроизвольное отключение, сбой батарей, перегрев вентилятора, торможения (зависание оборудования), искаженное изображение на экране – это основные, но далеко не все проблемы, с которыми обращаются в наш компьютерный сервис. 
+                        p Какой бы ни была поломка вашего ноутбука, обратитесь в сервис Geko Corp. Наши мастера окажут срочную профессиональную помощь и вернут ваш ноутбук к жизни с гарантией стабильной безотказной работы при условии правильной эксплуатации.  В 90% случаев с проблемой удается справиться в день обращения, при серьезных проблемах неисправное устройство будет бесплатно доставлено в сервисный центр.
+
+            +repair-form("Компьютерный сервис Geko Corp предоставляет услугу срочного выездного ремонта компьютерной техники в Москве и МО", "Для вызова специалиста оформите заявку на нашем сайте или по телефону, обязательно укажите марку и модель устройства, подробно опишите проблему: это даст возможность специалисту подготовить нужные детали и инструменты для ремонта.", "Наш специалист прибудет по указанному адресу в течение часа, или вы можете договориться о любом удобном для вас времени.", "Мастер бесплатно проведет диагностику вашего компьютера для выявления причины неисправности, предложит перечень необходимых работ и согласует с вами стоимость ремонта.", "Мастер проведет работы по ремонту и настройке вашего компьютера. По окончании работ подписывается договор и акт выполненных работ с предоставлением гарантии на выполненные работы и комплектующие сроком на 1 год.", "form--repair", "repair-form")
+
+
+            section.repair-price(aria-labelledby="notebooks-price-title") 
+                .wrapper
+                    .section-wrapper
+                        h2.repair-price__title.section-title#notebooks-price-title стоимость работ
+                        p.repair-price__subtitle Наши цены на услуги по ремонту ноутбуков окончательны, то есть не включают скрытых надбавок, которые в дальнейшем могут привести к значительному увеличению стоимости ремонта. После бесплатной диагностики окончательная смета работ составляется из нижеуказанных цен плюс стоимость комплектующих в случае необходимости их замены.
+                        .acordion.acordion-repair
+                            .acordion-item
+                                button.acordion-button(type="button") ремонт системного блока
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Замена клавиатуры
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена матрицы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена рамки и петель крепления матрицы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена корпуса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт или замена клавиатуры
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена процессора
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена разъема питания
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена HDD / SDD
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена аккумулятора
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт материнской платы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена северного моста
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Рнмонт залитого ноутбука
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Чистка ноутбука от пыли и грязи
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") программная часть
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Установка Windows
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка программного пакета
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление ОС после повреждения
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление информации при программных сбоях
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление информации при аппаратных повреждениях дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Удаление вирусов (антивирусная профилактика)
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка антивируса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка драйверов
+                                            span ? руб.
+
+                        +price-button("button-wrapper--repair")
+
+            section.repair-license(aria-labelledby="notebooks-license-title") 
+                .wrapper 
+                    h2.t-29#notebooks-license-title Мы ремонтируем ноутбуки любых марок и неисправности любой сложности
+                    ul.repair-license__list 
+                        li
+                            img(src="icons/repair/philips.svg", alt="philips logo", loading="lazy")
+                        li
+                            img(src="icons/repair/apple.svg", alt="apple logo", loading="lazy")
+                        li
+                            img(src="icons/repair/toshiba.svg", alt="toshiba logo", loading="lazy")
+                        li
+                            img(src="icons/repair/hp.svg", alt="hp logo", loading="lazy")
+                        li
+                            img(src="icons/repair/lenovo.svg", alt="lenovo logo", loading="lazy")
+                        li
+                            img(src="icons/repair/xiaomi.svg", alt="xiaomi logo", loading="lazy")
+                        li
+                            img(src="icons/repair/huawei.svg", alt="huawei logo", loading="lazy")
+                        li
+                            img(src="icons/repair/lg.svg", alt="lg logo", loading="lazy")
+                        li
+                            img(src="icons/repair/sony.svg", alt="sony logo", loading="lazy")
+                        li
+                            img(src="icons/repair/dell.svg", alt="dell logo", loading="lazy")
+                        li
+                            img(src="icons/repair/samsung.svg", alt="samsung logo", loading="lazy")
+                        li
+                            img(src="icons/repair/asus.svg", alt="asus logo", loading="lazy")
+                        li
+                            img(src="icons/repair/vaio.svg", alt="vaio logo", loading="lazy")
+                        li
+                            img(src="icons/repair/acer.svg", alt="acer logo", loading="lazy")
+                    p.t-20 В своей работе мы используем только лицензионное программное обеспечение и оригинальные комплектующие от официальных дистрибьюторов
+
+
+            +attention("Важно вовремя обратиться в сервисный центр", "icons/attention/attention-img-5.svg", "attention__repair", "attention__link--hidden", "attention icon", "В большинстве случаев человеку, не знакомому с устройством компьютера, сложно понять, в чем именно причина поломки. Для того, чтобы можно было приблизительно определить, почему компьютер перестал работать, и во сколько ориентировочно обойдется его ремонт, мы приводим список основных неисправностей и их причины.", "attention__content--border", "attention__subtitle attention__subtitle--hidden", subtitle)
+
+
+            section.repair-breakdowns
+                h2.visually-hidden Неисправности
+                .wrapper
+                    .section-wrapper
+                        table 
+                            thead
+                                tr
+                                    th.title-hidden.t-29 неисправность
+                                    th.title-hidden.t-29 Причина  
+                            tbody 
+                                tr 
+                                    td.table-title Ноутбук не включается
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td 
+                                        ul  
+                                            li Неисправен внешний блок питания
+                                            li Неисправны цепи питания материнской платы
+                                            li Неисправна микросхема южного / северного моста
+                                            li Неисправна микросхема BIOS
+                                            li Неисправна кнопка включения
+                                tr 
+                                    td.table-title Ноутбук стартует, но не проходит инициализацию
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправен чип видеокарты
+                                            li Неисправны модули памяти
+                                            li Неисправна микросхема южного / северного моста
+                                            li Неисправны цепи питания материнской платы
+                                            li Неисправна микросхема BIOS
+                                tr 
+                                    td.table-title Искаженное изображение на экране
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправен чип видеокарты
+                                            li Неисправна матрица / шлейф матрицы
+                                tr 
+                                    td.table-title Ноутбук не включается после залития
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Коррозия элементов материнской платы
+                                            li Неисправны цепи питания
+                                            li Неисправны микросхемы материнской платы
+                                tr 
+                                    td.table-title Не работает клавиатура
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправна клавиатура
+                                            li Неисправен мультиконтроллер
+                                            li Неисправен разъем клавиатуры
+                                tr 
+                                    td.table-title Ноутбук перегревается
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Засорение системы охлаждения
+                                            li Неисправен вентилятор системы охлаждения
+                                tr 
+                                    td.table-title Не загружает до конца операционную систему после включения
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Повреждение структуры каталогов ОС
+                                            li Неисправен жесткий диск
+                                tr 
+                                    td.table-title Отсутствует подсветка матрицы
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправен инвертер
+                                            li Неисправна лампа подсветки матрицы
+                                tr 
+                                    td.table-title Отсутствует звук
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправны динамики
+                                            li Неисправен усилитель низкой частоты
+                                            li Некорректно установлен драйвер устройства
+                                            li Неисправен аудиоразъем
+                                tr 
+                                    td.table-title Не работает WI-FI или сетевое подключение
+                                        img(src="icons/arrow-problems.svg", alt="arrow-table icon", loading="lazy")
+                                    td
+                                        ul  
+                                            li Неисправен модуль WI-FI
+                                            li Неисправна микросхема южного моста
+                                            li Некорректно установлен драйвер устройства
+
+                        +consultation-button()
+
+
+
+        include ../blocks/_footer.pug
+
+
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-3.pug
+        include ../blocks/_dialog-5.pug
+        include ../blocks/_dialog-6.pug

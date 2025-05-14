@@ -1,0 +1,1308 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp прайс-лист", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--no-bg")
+        main
+            +page-title("Прайс-лист", "price-title")
+
+            aside.price-btn 
+                .wrapper 
+                    .price-btn__group 
+                        button.price-btn__btn.price-btn__btn--active.price-btn__physical(type="button") 
+                            span Физическим 
+                                br
+                                | лицам
+                            svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M15.0054 27.4976C14.6889 27.8193 14.2598 28 13.8123 28C13.3648 28 12.9357 27.8193 12.6192 27.4976L2.49408 17.2027C2.17772 16.881 2 16.4446 2 15.9896C2 15.5347 2.17772 15.0983 2.49408 14.7766L12.6192 4.48165C12.9375 4.1691 13.3638 3.99616 13.8062 4.00006C14.2487 4.00397 14.6719 4.18443 14.9848 4.50255C15.2977 4.82068 15.4752 5.25103 15.479 5.70091C15.4829 6.15079 15.3128 6.58421 15.0054 6.90782L7.76084 14.2738L27.3125 14.2738C27.76 14.2738 28.1893 14.4546 28.5057 14.7764C28.8222 15.0982 29 15.5346 29 15.9896C29 16.4447 28.8222 16.8811 28.5057 17.2029C28.1893 17.5247 27.76 17.7055 27.3125 17.7055H7.76084L15.0054 25.0715C15.3217 25.3932 15.4995 25.8296 15.4995 26.2845C15.4995 26.7395 15.3217 27.1759 15.0054 27.4976Z" fill="#E7742E")
+                        button.price-btn__btn.price-btn__corporate(type="button") 
+                            span Корпоративным 
+                                br
+                                | клиентам
+                            svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M15.9946 4.50237C16.3111 4.1807 16.7402 4 17.1877 4C17.6352 4 18.0643 4.1807 18.3808 4.50237L28.5059 14.7973C28.8223 15.119 29 15.5554 29 16.0104C29 16.4653 28.8223 16.9017 28.5059 17.2234L18.3808 27.5183C18.0625 27.8309 17.6362 28.0038 17.1938 27.9999C16.7513 27.996 16.3281 27.8156 16.0152 27.4974C15.7023 27.1793 15.5248 26.749 15.521 26.2991C15.5171 25.8492 15.6872 25.4158 15.9946 25.0922L23.2392 17.7262H3.68752C3.23996 17.7262 2.81074 17.5454 2.49426 17.2236C2.17779 16.9018 2 16.4654 2 16.0104C2 15.5553 2.17779 15.1189 2.49426 14.7971C2.81074 14.4753 3.23996 14.2945 3.68752 14.2945H23.2392L15.9946 6.92853C15.6783 6.60677 15.5005 6.17042 15.5005 5.71545C15.5005 5.26048 15.6783 4.82413 15.9946 4.50237Z" fill="white")
+
+            .price-btn-mobile
+                .wrapper
+                    .price-btn-wrapper
+                        img(src="icons/opened.svg", alt="opened icon")
+                        p Физическим лицам
+
+
+            section.prices.prices-physical
+                h2.visually-hidden Цены физическим лицам - превью 
+                .wrapper 
+                    p Наши цены на услуги по компьютерной помощи окончательны, то есть не включают скрытых надбавок, которые в дальнейшем могут привести к значительному увеличению стоимости ремонта. После бесплатной диагностики окончательная смета работ составляется специалистом из нижеуказанных цен плюс стоимость комплектующих в случае необходимости их замены.
+                    ul.prices__list 
+                        li.prices__list-item
+                            span Выезд мастера
+                            span бесплатно
+                        li.prices__list-item
+                            span Диагностика
+                            span бесплатно
+                    article.price
+                        h3.price__title.t-29 Аппаратная часть
+                        .acordion
+                            .acordion-item
+                                button.acordion-button.acordion-button--active(type="button") Ремонт компьютеров
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper.acordion-wrapper--open
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Замена блока питания
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена HDD / SDD дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена планок ОЗУ (оперативная память)
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена кулера (система охлаждения)
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена материнской платы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена / реболл чипов (видеочип, северный мост, южный мост)
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт цепей питания (цена зависит от сложности ремонта и оговаривается после диагностики)
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт / замена видеокарты
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена процессора
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Профилактические работы (чистка от пыли)
+                                            span ? руб.
+                            
+                            .acordion-item
+                                button.acordion-button(type="button") Ремонт ноутбуков
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Замена клавиатуры
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена матрицы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена рамки и петель крепления матрицы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена корпуса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт или замена клавиатуры
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена процессора
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена разъема питания
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена HDD / SDD дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена аккумулятора
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт материнской платы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена северного моста
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Рнмонт залитого ноутбука
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Чистка ноутбука от пыли и грязи
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") Ремонт моноблоков
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Замена матрицы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Чистка моноблока
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт или замена HDD / SDD дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена процессора
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Ремонт или замена материнской платы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена оперативной памяти
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена системы охлаждения
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена шлейфа
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена инвертера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена лампы подсветки
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") Ремонт техники Apple
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Imac
+                                                    img(src="icons/arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist     
+                                                        li
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Imac Pro
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Imac 27’’
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Imac 21,5’’
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Macbook
+                                                    img(src="icons/arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist     
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Macbook Pro (2009-2012)
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Macbook Pro retina (late 2012 - early 2015)
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Macbook Pro (2016-2020)
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Macbook air (2010-2017)
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Macbook air (2018-2020)
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Macbook 12’’
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Mac pro
+                                                    img(src="icons/arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist     
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac Pro 2019
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac Pro 2013
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac Pro server 2010
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac Pro server 2012
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac Pro 2012
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac Pro 2010
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac Pro 2009
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Mac mini
+                                                    img(src="icons/arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist     
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac mini 2018
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac mini 2014
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac mini 2012
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac mini 2011
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Mac mini 2009
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Ipad
+                                                    img(src="icons/arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist     
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Ipad pro
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Ipad air
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Ipad mini
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                                        li 
+                                                            .acordion-subitem-two 
+                                                                button.acordion-subbutton-two(type="button") Ipad
+                                                                    span 
+                                                                .acordion-wrapper
+                                                                    ul.acordion-sublist-two
+                                                                        li.acordion-list__item 
+                                                                            span Замена блока питания
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена HDD / SDD дисков, установка дополнительных дисков
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена дисплея
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена кулера (система охлаждения)
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена материнской платы
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена видеокарты
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Замена процессора
+                                                                            span ? руб.
+                                                                        li.acordion-list__item 
+                                                                            span Профилактические работы (чистка от пыли)
+                                                                            span ? руб.
+                                    
+
+                            .acordion-item
+                                button.acordion-button(type="button") Сборка и апгрейд компьютеров
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Сборка офисного компьютера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Сборка домашнего компьютера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Сборка компьютера для игр и работы с графикой
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Сборка сервера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена материнской платы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена HDD / SDD дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена систем охлаждения
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена видеокарты
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Увеличение оперативной памяти
+                                            span ? руб.
+
+                    article.price
+                        h3.price__title.t-29 Программная часть
+                        .acordion
+                            .acordion-item
+                                button.acordion-button(type="button") Операционные системы
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Установка любой версии Windows
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка Windows под нужды пользователя
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка Windows на iMac или Macbook
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка MacOS
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка MacOS под нужды пользователя
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Перенос и сохранение данных на жестком диске
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Восстановление операционной системы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Подключение к интернету
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") Программное обеспечение
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Установка пакета Microsoft Office
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка различных программ на PC
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка различных программ на Mac
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка антивируса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка драйверов
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") Антивирусная помощь
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Поиск и удаление вируса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Удаление вируса порно-баннера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Проверка и очистка компьютера от программ-шпионов
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Удаление вируса типа “червь” на внешних носителях и HDD
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Антивирусная профилактика
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Блокировка интернет-рекламы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка антивируса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка других средств защиты
+                                            span ? руб.
+
+
+                    article.price
+                        h3.price__title.t-29 Восстановление данных
+                        .acordion
+                            ul.acordion-list 
+                                li.acordion-list__item
+                                    span Восстановление информации при программных сбоях
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Восстановление информации при аппаратных повреждениях дисков
+                                    span ? руб.
+
+
+                    article.price
+                        h3.price__title.t-29 Настройка сети
+                        .acordion
+                            ul.acordion-list 
+                                li.acordion-list__item
+                                    span Настройка интернета
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Настройка интернета по Wi-Fi сети
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Замена прошивки роутера
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Настройка Wi-Fi адаптера
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Настройка безопасности Wi-Fi сети
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Создание локальной сети
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Прокладка кабеля
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Обжим кабеля коннектором RG-45
+                                    span ? руб.
+
+                    article.price
+                        h3.price__title.t-29 Абонентское обслуживание
+                        .acordion
+                            ul.acordion-list 
+                                li.acordion-list__item
+                                    span Тариф “Персональный” (до 3 устройств)
+                                    span ? руб.
+                                li.acordion-list__item
+                                    span Тариф “Семейный” (до 6 устройств)
+                                    span ? руб.
+
+
+
+            .price-btn-mobile
+                .wrapper
+                    .price-btn-wrapper
+                        img(src="icons/opened.svg", alt="opened icon")
+                        p Корпоративным клиентам
+
+
+            section.prices.prices-corporate.prices-corporate--close
+                h2.visually-hidden Цены корпоративным клиентам - превью 
+                .wrapper
+                    p Все цены, указанные в нашем прайс-листе на IT-аутсорсинг в Москве, носят ознакомительный характер. Точную стоимость вам озвучит специалист после аудита вашей IT-инфраструктуры. Если вас заинтересовали услуги компании Geko Corp, свяжитесь с нашими специалистами, и мы разработаем для вас индивидуальный абонентский тариф, включающий обслуживание и настройку компьютров и офисного оборудования.
+                    article.price
+                        h3.visually-hidden Абонентское обслуживание ПК и ноутбуков
+                        .acordion
+                            .acordion-item
+                                button.acordion-button.acordion-button--active(type="button") Абонентское обслуживание ПК и ноутбуков
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper.acordion-wrapper--open
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Абонентское обслуживание ПК до 5 машин
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Абонентское обслуживание ПК от 6 до 10 машин
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Абонентское обслуживание ПК от 11 до 15 машин
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Абонентское обслуживание ПК от 16 до 20 машин
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Абонентское обслуживание ПК от 21 до 30 машин
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Абонентское обслуживание ПК более 30 машин
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Абонентское обслуживание ПК с правами администратора
+                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Абонентское обслуживание интернет-сервера
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Абонентское обслуживание серверных станций
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Абонентское обслуживание офисного оборудования
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Обслуживание оргтехники
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Работы по кабельным сетям
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Установка программного обеспечения
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Установка / настройка специального ПО
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Обслуживание фирмы по 1С
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                        li
+                                            .acordion-subitem
+                                                button.acordion-subbutton(type="button") Прочие услуги
+                                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                                .acordion-wrapper
+                                                    ul.acordion-sublist
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+                                                        li.acordion-list__item
+                                                            span Lorem ipsum dolor sit.
+                                                            span ? руб.
+
+
+
+
+            .wrapper 
+                p Если вы не нашли интересующую вас услугу или у вас возникли вопросы, свяжитесь с нами по телефону или с помощью формы обратной связи. Наш специалист предоставит вам исчерпывающую информацию и поможет найти нестандартное решение для любой проблемы с вашей компьютерной техникой.
+                +consultation-button("button-wrapper--prices")
+
+        include ../blocks/_footer.pug
+
+
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-3.pug
+        include ../blocks/_dialog-5.pug

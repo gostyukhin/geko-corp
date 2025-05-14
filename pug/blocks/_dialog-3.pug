@@ -1,0 +1,21 @@
+dialog.dialog-3#dialog-3
+    .dialog-wrapper 
+        .dialog-top
+            p.dialog-title Получить консультацию
+            button.dialog-close-button
+                img.dialog-close(src="icons/dialog-close.svg", alt="")
+        .dialog-content.dialog-content--form
+            form.form#dialog3-form(action="https://echo.htmlacademy.ru/", method="dialog", novalidate)
+                .form__name
+                    label.form__label(for="user-name-dialog3") Ваше имя *
+                    input.form__input#user-name-dialog3.input-name(type="text", name="user-name", placeholder="Имя")
+                .form__phone
+                    label.form__label(for="user-phone-dialog3") Ваш телефон *
+                    input.form__input#user-phone-dialog3.input-phone(type="tel", name="user-phone", placeholder="+7 ( ___ ) ___-__-__")
+                .form__checkbox 
+                    label.form__label.checkbox-label.t-14(for="checkbox-dialog-2") 
+                        | Даю согласие на обработку моих персональных данных и принимаю 
+                        a(href="#")  политику конфиденциальности
+                        input.checkbox-hidden#checkbox-dialog-2.input-js(type="checkbox", name="proccesing")
+                        span(tabindex="0").checkbox
+                button.form__button.button.button--primary(type="submit") Отправить

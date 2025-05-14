@@ -1,0 +1,100 @@
+include ../_includes.pug
+doctype html
+html(lang="ru")
+    +head("Geko Corp сборка и апгрейд компьютеров", "Ремонт и обслуживание цифровой техники, выезд мастера на дом")
+    body
+        +header("header header--no-bg")
+        main 
+            include ../blocks/_repair-navigation.pug
+
+            +repair-preview("upgrade-preview", "icons/repair/upgrade.svg", "upgrade icon", "Сборка и апгрейд компьютеров")
+
+
+
+            section.upgrade-hero.repair-hero
+                h2.visually-hidden Апгрейд - превью
+                .wrapper 
+                    .repair-hero__top
+                        p Если при всем разнообразии выбора вы не можете подобрать компьютер подходящей конфигурации, соответствующей всем вашим потребностям, мы предлагаем услугу – сборка компьютера «под ключ»: подбор комплектующих, доставка, сборка и установка необходимых программ в вашем присутствии.
+                    .repair-hero__middle
+                        p.repair-hero__subtitle.upgrade-hero__subtitle.t-29 индивидуальная сборка ПК – это идеальное соотношение производительностИ, цены и качества.
+                        p Если же вы хотите просто улучшить производительность и функционал своего старого компьютера, мы готовы провести апгрейд с учетом всех ваших пожеланий. Это позволит Вам решить вопрос о поддержании оптимальной конфигурации в течение всего срока его эксплуатации.
+                        img.monoblocks-hero__img.upgrade-hero__img(src="images/repair-hero-5.jpg", alt="")
+                    .repair-hero__bottom 
+                        p Специалисты Геко сервис помогут вам  определиться с нужными параметрами, такими как: производительность, объем оперативной памяти RAM, жесткого диска HDD, твердотельного SDD, мощности видеокарты и прочими характеристиками комплектующих и подберут оптимальную конфигурацию системного блока в соответствии с поставленными вами задачами: для офиса, дома, для игр и работы с графикой, для сервера.
+
+
+            +repair-form("Компьютерный сервис Geko Corp предоставляет услуги по сборке и апгрейду компьютерной техники в Москве и МО", "Оформите заявку на нашем сайте или свяжитесь со специалистом центра по телефону, опишете, какие задачи вы будете решать с помощью компьютера, и мы подберем необходимую конфигурацию и комплектующие для решения вашей задачи.", "После согласования конфигурации компьютера подписывается договор и, если вы доверяете закупку нашему мастеру, вносится предоплата в размере стоимости комплектующих. Или вы можете приобрести комплектующие самостоятельно.", "Сборка компьютера, по вашему выбору, производится в сервисе Geko Corp или на вашей территории. После сборки компьютера, переноса данных и установки необходимого для работы программного обеспечения мы проводим тестирование работоспособности компьютера в вашем присутствии.", "По завершении тестировани вы оплачиваете выполненные по договору работы и подписываете акт. На новое или модернизированное оборудование предоставляется гарантия 3 года, при условии соблюдения условий эксплуатации.", "form--repair", "repair-form")
+
+
+            section.repair-price(aria-labelledby="upgrade-price-title") 
+                .wrapper
+                    .section-wrapper
+                        h2.repair-price__title.section-title#upgrade-price-title стоимость работ
+                        p.repair-price__subtitle Наши цены на услуги по сборке и апгрейду компьютеров окончательны, то есть не включают скрытых надбавок, которые в дальнейшем могут привести к значительному увеличению стоимости услуг специалиста. Окончательная смета работ составляется из нижеуказанных цен плюс стоимость комплектующих.
+                        .acordion.acordion-repair
+                            .acordion-item
+                                button.acordion-button(type="button") Аппаратная часть
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Сборка офисного компьютера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Сборка домашнего компьютера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Сборка компьютера для игр и работы с графикой
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Сборка сервера
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена материнской платы
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена HDD / SDD дисков
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена систем охлаждения
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Замена видеокарты
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Увеличение оперативной памяти
+                                            span ? руб.
+                            .acordion-item
+                                button.acordion-button(type="button") программная часть
+                                    img(src="icons/close-arrow-dropdown.svg", alt="close arrow icon", loading="lazy")
+                                .acordion-wrapper
+                                    ul.acordion-list 
+                                        li.acordion-list__item
+                                            span Установка Windows
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка MacOS
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка программного пакета
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка антивируса
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Установка драйверов
+                                            span ? руб.
+                                        li.acordion-list__item
+                                            span Настройка компьютера
+                                            span ? руб.
+
+                        +price-button("button-wrapper--repair")
+
+        include ../blocks/_footer.pug
+
+
+        include ../blocks/_btn-fixed.pug
+        include ../blocks/_dialog-2.pug
+        include ../blocks/_dialog-5.pug
+        include ../blocks/_dialog-6.pug

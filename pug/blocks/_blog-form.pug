@@ -1,0 +1,37 @@
+section.blog-form 
+    .wrapper 
+        .section-wrapper 
+            h2.blog-form__title.section-title Возникли вопросы?
+            p.blog-form__subtitle Мы с радостью ответим на любой вопрос о вашей технике. Позвоните или напишите нам.
+            .blog-form__wrapper
+                form.form#blog1-form(action="https://echo.htmlacademy.ru/", method="post", novalidate)
+                    .form__name
+                        label.form__label(for="user-name-blog") Ваше имя *
+                        input.form__input#user-name-blog.input-name(type="text", name="user-name", placeholder="Имя")
+                    .form__phone
+                        label.form__label(for="user-phone-blog") Ваш телефон *
+                        input.form__input#user-phone-blog.input-phone(type="tel", name="user-phone", placeholder="+7 ( ___ ) ___-__-__")
+                    .form__checkbox 
+                        label.form__label.checkbox-label.t-14(for="checkbox-blog") 
+                            | Даю согласие на обработку моих персональных данных и принимаю 
+                            a(href="#")  политику конфиденциальности
+                            input.checkbox-hidden#checkbox-blog.input-js(type="checkbox", name="proccesing-blog")
+                            span(tabindex="0").checkbox
+                    button.form__button.button.button--primary(type="submit") заказать звонок
+                form.form#blog2-form(action="https://echo.htmlacademy.ru/", method="post", novalidate)
+                    .form__name
+                        label.form__label(for="user-name") Ваше имя *
+                        input.form__input#user-name.input-name(type="text", name="user-name", placeholder="Имя")
+                    .form__email
+                        label.form__label(for="user-email") Ваш email
+                        input.form__input#user-email(type="email", name="user-email", placeholder="E-mail")
+                    .form__message
+                        label.form__label(for="user-message") Ваш вопрос
+                        textarea.form__input#user-message(name="user-message", placeholder="Текст вопроса")
+                    .form__checkbox 
+                        label.form__label.checkbox-label.t-14(for="checkbox") 
+                            | Даю согласие на обработку моих персональных данных и принимаю 
+                            a(href="#")  политику конфиденциальности
+                            input.checkbox-hidden#checkbox(type="checkbox", name="proccesing")
+                            span(tabindex="0").checkbox
+                    button.form__button.button.button--primary(type="submit") Отправить
